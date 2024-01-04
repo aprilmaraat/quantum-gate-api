@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33110.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuantumGateAPI", "QuantumGateAPI\QuantumGateAPI.csproj", "{59EE676A-3785-4B81-8C71-87139E5B1396}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "QuantumGate.Common.Level1", "QuantumGate.Common.Level1", "{37C3D740-71A0-4E29-B104-B180048F3A78}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuantumGate.Auth.Models", "QuantumGate.Auth.Models\QuantumGate.Auth.Models.csproj", "{41E0BAD9-EF58-4397-913B-D435706F0F28}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuantumGate.Packages", "QuantumGate.Packages\QuantumGate.Packages.csproj", "{0F7A31D3-3C42-4FC6-A5A8-E4E035C898ED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{59EE676A-3785-4B81-8C71-87139E5B1396}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59EE676A-3785-4B81-8C71-87139E5B1396}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59EE676A-3785-4B81-8C71-87139E5B1396}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59EE676A-3785-4B81-8C71-87139E5B1396}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41E0BAD9-EF58-4397-913B-D435706F0F28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41E0BAD9-EF58-4397-913B-D435706F0F28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41E0BAD9-EF58-4397-913B-D435706F0F28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41E0BAD9-EF58-4397-913B-D435706F0F28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F7A31D3-3C42-4FC6-A5A8-E4E035C898ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F7A31D3-3C42-4FC6-A5A8-E4E035C898ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F7A31D3-3C42-4FC6-A5A8-E4E035C898ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F7A31D3-3C42-4FC6-A5A8-E4E035C898ED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{41E0BAD9-EF58-4397-913B-D435706F0F28} = {37C3D740-71A0-4E29-B104-B180048F3A78}
+		{0F7A31D3-3C42-4FC6-A5A8-E4E035C898ED} = {37C3D740-71A0-4E29-B104-B180048F3A78}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {71289A16-AF83-4291-9559-76E5FC0F1683}
+	EndGlobalSection
+EndGlobal
