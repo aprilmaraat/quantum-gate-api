@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\QuantumGate.Packages\QuantumGate.Packages.csproj" />
+  </ItemGroup>
+
 </Project>
