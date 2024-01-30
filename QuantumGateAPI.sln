@@ -3,13 +3,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33110.190
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuantumGateAPI", "QuantumGateAPI\QuantumGateAPI.csproj", "{59EE676A-3785-4B81-8C71-87139E5B1396}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuantumGateAPI", "QuantumGateAPI\QuantumGateAPI.csproj", "{59EE676A-3785-4B81-8C71-87139E5B1396}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "QuantumGate.Common.Level1", "QuantumGate.Common.Level1", "{37C3D740-71A0-4E29-B104-B180048F3A78}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuantumGate.Auth.Models", "QuantumGate.Auth.Models\QuantumGate.Auth.Models.csproj", "{41E0BAD9-EF58-4397-913B-D435706F0F28}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuantumGate.Auth.Models", "QuantumGate.Auth.Models\QuantumGate.Auth.Models.csproj", "{41E0BAD9-EF58-4397-913B-D435706F0F28}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuantumGate.Packages", "QuantumGate.Packages\QuantumGate.Packages.csproj", "{0F7A31D3-3C42-4FC6-A5A8-E4E035C898ED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuantumGate.Packages", "QuantumGate.Packages\QuantumGate.Packages.csproj", "{0F7A31D3-3C42-4FC6-A5A8-E4E035C898ED}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "QuantumGate.Common.Level2", "QuantumGate.Common.Level2", "{B11E7378-AA00-4C5D-8D31-FA3E872305DF}"
+EndProject
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
