@@ -1,6 +1,6 @@
 ﻿
 
-namespace QuantumGate.Packages.Models
+namespace QuantumGate.CommonPackages.Models
 {
     public enum ResponseState
     {

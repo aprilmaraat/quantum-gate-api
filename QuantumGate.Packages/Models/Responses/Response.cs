@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace QuantumGate.Packages.Models
+namespace QuantumGate.CommonPackages.Models
 {
     public class Response
     {
@@ -161,6 +161,75 @@ namespace QuantumGate.Packages.Models
         public new static Response<T> Error(Exception exception)
         {
             return new Response<T>
+            {
+                State = ResponseState.Exception,
+                Message = ResponseMessage.Exception,
+                Exception = exception,
+            };
+        }
+    }
+    /// <summary>
+    /// Response class with List of ResponseObjects
+    /// </summary>
+    public class PagedResponse<T> : Response
+    {
+        /// <summary>
+        /// The object that contains response values.
+        /// </summary>
+        public List<T>? ResponseObjects { get; set; }
+        public int TotalCount { get; set; }
+        public int TotalPages { get; set; }
+        public int CurrentPage { get; set; }
+        public int PageSize { get; set; }
+        /// <summary>
+        /// Creates a success response of the specified type.
+        /// </summary>
+        public static PagedResponse<T> Success(List<T>? responseObjects)
+        {
+            return new PagedResponse<T>
+            {
+                State = ResponseState.Success,
+                Message = ResponseMessage.Success,
+                Exception = null,
+                ErrorText = null,
+                ResponseObjects = responseObjects
+            };
+        }
+        /// <summary>
+        /// Creates a validation error response of the specified type.
+        /// </summary>
+        /// <param name="message">Error message explaining the failure</param>
+        /// <returns></returns>
+        public new static PagedResponse<T> Error(ResponseMessage message)
+        {
+            return new PagedResponse<T>
+            {
+                State = ResponseState.Error,
+                Message = message,
+            };
+        }
+        /// <summary>
+        /// Creates a validation error response of the specified type.
+        /// </summary>
+        /// <param name="errortText">Error message explaining the failure</param>
+        /// <returns></returns>
+        public new static PagedResponse<T> Error(string errortText)
+        {
+            return new PagedResponse<T>
+            {
+                State = ResponseState.Error,
+                Message = ResponseMessage.MiscError,
+                ErrorText = errortText,
+            };
+        }
+        /// <summary>
+        /// Creates a exception error response of the specified type.
+        /// </summary>
+        /// <param name="exception">Exception that caused the failure</param>
+        /// <returns></returns>
+        public new static PagedResponse<T> Error(Exception exception)
+        {
+            return new PagedResponse<T>
             {
                 State = ResponseState.Exception,
                 Message = ResponseMessage.Exception,

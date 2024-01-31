@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\QuantumGate.Packages\QuantumGate.Packages.csproj" />
+    <ProjectReference Include="..\QuantumGate.Packages\QuantumGate.CommonPackages.csproj" />
   </ItemGroup>
 
 </Project>

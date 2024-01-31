@@ -1,6 +1,6 @@
 ﻿
 
-namespace QuantumGate.Packages
+namespace QuantumGate.CommonPackages
 {
     public interface IAppCache
     {
