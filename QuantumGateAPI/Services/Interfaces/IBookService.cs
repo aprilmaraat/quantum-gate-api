@@ -1,8 +1,7 @@
 ﻿using QuantumGate.BookCatalog.Models;
-using QuantumGate.CommonPackages.Models;
-using QuantumGate.CommonPackages.Models.Requests;
+using QuantumGate.CommonPackages;
 
-namespace QuantumGateAPI.Services
+namespace QuantumGateAPI.Services.Interfaces
 {
     public interface IBookService
     {

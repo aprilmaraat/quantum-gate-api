@@ -1,8 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using QuantumGate.CommonPackages.Models;
-using QuantumGateAPI.Services;
 using QuantumGate.BookCatalog.Models;
-using QuantumGate.CommonPackages.Models.Requests;
+using QuantumGate.CommonPackages;
+using QuantumGateAPI.Services.Interfaces;
 
 namespace QuantumGateAPI.Controllers
 {
@@ -15,15 +14,15 @@ namespace QuantumGateAPI.Controllers
             _bookService = bookService;
         }
 
-        [HttpPost]
-        public async Task<IActionResult> Search([FromBody] PagedSearchParam searchParam) 
+        [HttpGet]
+        public async Task<IActionResult> Search(PagedSearchParam searchParam)
         {
             var response = await _bookService.GetByKeyword(searchParam);
 
             switch (response.State)
             {
                 case ResponseState.Exception:
-                    return StatusCode(500, response.Exception.Message);
+                    return StatusCode(500, response.Exception?.Message);
                 case ResponseState.Error:
                     return BadRequest(response.MessageText);
                 default:
@@ -39,7 +38,7 @@ namespace QuantumGateAPI.Controllers
             switch (response.State)
             {
                 case ResponseState.Exception:
-                    return StatusCode(500, response.Exception.Message);
+                    return StatusCode(500, response.Exception?.Message);
                 case ResponseState.Error:
                     return BadRequest(response.MessageText);
                 default:
@@ -55,7 +54,7 @@ namespace QuantumGateAPI.Controllers
             switch (response.State)
             {
                 case ResponseState.Exception:
-                    return StatusCode(500, response.Exception.Message);
+                    return StatusCode(500, response.Exception?.Message);
                 case ResponseState.Error:
                     return BadRequest(response.MessageText);
                 default:
@@ -71,7 +70,7 @@ namespace QuantumGateAPI.Controllers
             switch (response.State)
             {
                 case ResponseState.Exception:
-                    return StatusCode(500, response.Exception.Message);
+                    return StatusCode(500, response.Exception?.Message);
                 case ResponseState.Error:
                     return BadRequest(response.MessageText);
                 default:
@@ -87,7 +86,7 @@ namespace QuantumGateAPI.Controllers
             switch (response.State)
             {
                 case ResponseState.Exception:
-                    return StatusCode(500, response.Exception.Message);
+                    return StatusCode(500, response.Exception?.Message);
                 case ResponseState.Error:
                     return BadRequest(response.MessageText);
                 default:

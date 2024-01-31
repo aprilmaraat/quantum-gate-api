@@ -6,7 +6,7 @@ namespace QuantumGateAPI
     public class Program
     {public static void Main(string[] args)
         {
-            Console.Title = "Quarto.Auth";
+            Console.Title = "QuantumGate API";
             CreateHostBuilder(args).Build().Run();
         }
 

@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace QuantumGate.CommonPackages.Models
+﻿namespace QuantumGate.CommonPackages
 {
     public class Response
     {
@@ -19,7 +13,7 @@ namespace QuantumGate.CommonPackages.Models
         {
             get
             {
-                return (State == ResponseState.Success);
+                return State == ResponseState.Success;
             }
         }
         /// <summary>
@@ -42,11 +36,11 @@ namespace QuantumGate.CommonPackages.Models
         /// <summary>
         /// When the response is a failure without an exception or prefined error, this is the error message
         /// </summary>
-        public string ErrorText { get; set; }
+        public string? ErrorText { get; set; }
         /// <summary>
         /// When the response is a failure, this is the exception
         /// </summary>
-        public Exception Exception { get; set; }
+        public Exception? Exception { get; set; }
         /// <summary>
         /// Creates a success response.
         /// </summary>
@@ -111,7 +105,7 @@ namespace QuantumGate.CommonPackages.Models
         /// <summary>
         /// The object that contains response values.
         /// </summary>
-        public T ResponseObject { get; set; }
+        public T? ResponseObject { get; set; }
         /// <summary>
         /// Creates a success response of the specified type.
         /// </summary>

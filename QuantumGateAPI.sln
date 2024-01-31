@@ -9,9 +9,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "QuantumGate.Common.Level1",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuantumGate.Auth.Models", "QuantumGate.Auth.Models\QuantumGate.Auth.Models.csproj", "{41E0BAD9-EF58-4397-913B-D435706F0F28}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuantumGate.CommonPackages", "QuantumGate.Packages\QuantumGate.CommonPackages.csproj", "{0F7A31D3-3C42-4FC6-A5A8-E4E035C898ED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuantumGate.CommonPackages", "QuantumGate.CommonPackages\QuantumGate.CommonPackages.csproj", "{0F7A31D3-3C42-4FC6-A5A8-E4E035C898ED}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuantumGate.BookCatalog.Models", "QuantumGate.Tunc.Models\QuantumGate.BookCatalog.Models.csproj", "{EFCBF878-59BA-4A77-A4A8-AF48C97121F0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuantumGate.BookCatalog.Models", "QuantumGate.BookCatalog.Models\QuantumGate.BookCatalog.Models.csproj", "{EFCBF878-59BA-4A77-A4A8-AF48C97121F0}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "QuantumGate.Common.Level2", "QuantumGate.Common.Level2", "{B11E7378-AA00-4C5D-8D31-FA3E872305DF}"
 EndProject

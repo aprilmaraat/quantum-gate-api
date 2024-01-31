@@ -15,7 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\QuantumGate.Tunc.Models\QuantumGate.BookCatalog.Models.csproj" />
+    <ProjectReference Include="..\QuantumGate.BookCatalog.Models\QuantumGate.BookCatalog.Models.csproj" />
   </ItemGroup>
 
 </Project>

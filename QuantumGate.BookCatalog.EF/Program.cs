@@ -3,9 +3,8 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
 using Microsoft.Extensions.Configuration;
 using System.IO;
-using QuantumGate.BookCatalog.EF;
 
-namespace Quarto.Api.EF.StartupEmulator
+namespace QuantumGate.BookCatalog.EF
 {
     class Program
     {

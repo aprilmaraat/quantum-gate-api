@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using QuantumGate.BookCatalog.EF;
 using QuantumGateAPI.Services;
+using QuantumGateAPI.Services.Interfaces;
 
 namespace QuantumGateAPI
 {

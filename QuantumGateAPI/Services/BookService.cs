@@ -1,11 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using QuantumGate.BookCatalog.EF;
 using QuantumGate.BookCatalog.Models;
-using QuantumGate.CommonPackages.Models;
-using QuantumGate.CommonPackages.Models.Requests;
-using QuantumGateAPI.Services;
-using System.Drawing.Printing;
-using System.Linq;
+using QuantumGate.CommonPackages;
+using QuantumGateAPI.Services.Interfaces;
 
 namespace QuantumGateAPI.Services
 {

@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel;
 
-namespace QuantumGate.CommonPackages.Models
+namespace QuantumGate.CommonPackages
 {
     /// <summary>
     /// Possible reponse messages
