@@ -17,6 +17,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "QuantumGate.Common.Level2",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuantumGate.BookCatalog.EF", "QuantumGate.BookCatalog.EF\QuantumGate.BookCatalog.EF.csproj", "{70AE4DB3-C4B1-4518-9E02-D7ADBB80E240}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuantumGateAPI.Tests", "QuantumGateAPI.Tests\QuantumGateAPI.Tests.csproj", "{54CA2F3C-6A12-4FFC-8E61-F170C711D869}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,6 +45,10 @@ Global
 		{70AE4DB3-C4B1-4518-9E02-D7ADBB80E240}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{70AE4DB3-C4B1-4518-9E02-D7ADBB80E240}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{70AE4DB3-C4B1-4518-9E02-D7ADBB80E240}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54CA2F3C-6A12-4FFC-8E61-F170C711D869}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54CA2F3C-6A12-4FFC-8E61-F170C711D869}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54CA2F3C-6A12-4FFC-8E61-F170C711D869}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54CA2F3C-6A12-4FFC-8E61-F170C711D869}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

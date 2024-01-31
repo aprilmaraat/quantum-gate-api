@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Humanizer;
+using Microsoft.EntityFrameworkCore;
 using QuantumGate.BookCatalog.EF;
 using QuantumGate.BookCatalog.Models;
 using QuantumGate.CommonPackages;
@@ -52,8 +53,8 @@ namespace QuantumGateAPI.Services
         {
             try
             {
-                var result = await _context.Books.Include(x => x.Category).FirstOrDefaultAsync(x => x.Id == id);
-                if(result == null) return Response<Book>.Error("Data can't be found.");
+                var result = await _context.Books.FirstOrDefaultAsync(x => x.Id == id);
+                if (result == null) return Response<Book>.Error(ResponseMessage.DataNotFound.Humanize());
                 return Response<Book>.Success(responseObject: result);
             }
             catch (Exception ex)
@@ -68,6 +69,7 @@ namespace QuantumGateAPI.Services
             {
                 try
                 {
+                    model.PublishDateUtc = model.PublishDateUtc.ToUniversalTime();
                     await _context.Books.AddAsync(model);
                     await _context.SaveChangesAsync();
                     await transaction.CommitAsync();
@@ -88,12 +90,12 @@ namespace QuantumGateAPI.Services
                 try
                 {
                     var book = await _context.Books.FirstOrDefaultAsync(x => x.Id == model.Id);
-                    if (book == null) return Response<Book>.Error("Data doesn't exist.");
+                    if (book == null) return Response<Book>.Error(ResponseMessage.DataNotFound.Humanize());
 
                     book.CategoryId = model.CategoryId;
                     book.Title = model.Title;
                     book.Description = model.Description;
-                    book.PublishDateUtc = model.PublishDateUtc;
+                    book.PublishDateUtc = model.PublishDateUtc.ToUniversalTime();
 
                     _context.Books.Update(book);
                     await _context.SaveChangesAsync();

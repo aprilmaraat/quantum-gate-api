@@ -1,13 +1,18 @@
-﻿namespace QuantumGate.BookCatalog.Models
+﻿using Newtonsoft.Json;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace QuantumGate.BookCatalog.Models
 {
     public class Book
     {
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
         public int CategoryId { get; set; }
         public string Title { get; set; }
         public string Description { get; set; }
         public DateTime PublishDateUtc { get; set; }
-        public Category Category { get; set; }
+        [JsonIgnore]
+        public virtual Category Category { get; set; }
 
         public Book() 
         {

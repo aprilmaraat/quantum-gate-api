@@ -19,5 +19,10 @@ namespace QuantumGate.CommonPackages
         /// </summary>
         [Description("Error")]
         MiscError,
+        /// <summary>
+        /// Response message for data not found
+        /// </summary>
+        [Description("Data not found.")]
+        DataNotFound
     }
 }
