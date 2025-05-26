@@ -10,4 +10,8 @@
     <ProjectReference Include="..\QuantumGate.Packages\QuantumGate.Packages.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Base\" />
+  </ItemGroup>
+
 </Project>
