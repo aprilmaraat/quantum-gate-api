@@ -1,33 +1,29 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.Text.Json.Serialization;
-using System.Threading.Tasks;
 
 namespace QuantumGate.Auth.Models
 {
-    public class UserCred
+    public class UserCred : BaseEntity
     {
-        public int UserID { get; set; }
-        public string UserName { get; set; }
-        public string AuthenticationHash { get; set; }
-        public DateTime LastUsedDT { get; set; }
+        public string UserName { get; set; } = string.Empty;
+        public string AuthenticationHash { get; set; } = string.Empty;
+        public DateTime LastUsedDT { get; set; } 
         public bool ResetPassword { get; set; }
         public DateTime? PasswordChangeDT { get; set; }
+        public Guid UserDataId { get; set; }
 
         [JsonIgnore]
-        public virtual UserData User { get; set; }
+        [ForeignKey(nameof(UserDataId))]
+        public virtual UserData UserData { get; set; } = null!;
 
-        public UserCred(int userID, string userName, string authenticationHash, DateTime lastUsedDT, bool resetPassword, DateTime? passwordChangeDT, UserData user)
+        public UserCred(Guid id, string userName, string authenticationHash, DateTime lastUsedDT, bool resetPassword, DateTime? passwordChangeDT)
         {
-            UserID = userID;
+            Id = id;
             UserName = userName;
             AuthenticationHash = authenticationHash;
             LastUsedDT = lastUsedDT;
             ResetPassword = resetPassword;
             PasswordChangeDT = passwordChangeDT;
-            User = user;
         }
     }
 }

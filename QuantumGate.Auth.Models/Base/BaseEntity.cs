@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace QuantumGate.Auth.Models.Base
+namespace QuantumGate.Auth.Models
 {
     public abstract class BaseEntity
     {
