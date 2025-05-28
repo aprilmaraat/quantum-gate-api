@@ -7,11 +7,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="9.0.5" />
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.5" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="8.1.2" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\QuantumGate.Packages\QuantumGate.Packages.csproj" />
+    <ProjectReference Include="..\QuantumGate.Auth.EF\QuantumGate.Auth.EF.csproj" />
   </ItemGroup>
 
 </Project>
