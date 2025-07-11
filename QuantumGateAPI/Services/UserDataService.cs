@@ -10,7 +10,7 @@ namespace QuantumGateAPI.Services
         private readonly QuantumGateAuthDbContext _context;
         public UserDataService(QuantumGateAuthDbContext context)
         {
-            _context = context ?? throw new ArgumentNullException(nameof(context));
+            _context = context;
         }
         public async Task<PagedResult<UserData>> GetUserDataAsync(int pageNumber, int pageSize)
         {
