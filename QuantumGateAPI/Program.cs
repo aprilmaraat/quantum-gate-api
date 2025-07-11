@@ -1,4 +1,3 @@
-using Microsoft.Extensions.Configuration;
 using QuantumGateAPI.Utilities;
 using Microsoft.OpenApi.Models;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -45,7 +44,6 @@ namespace QuantumGateAPI
             });
 
             builder.Services.AddControllers();
-            // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen(c =>
             {

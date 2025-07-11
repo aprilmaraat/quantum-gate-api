@@ -17,6 +17,8 @@ namespace QuantumGateAPI.Services
 
         public string GenerateToken(string userId, string role)
         {
+            // 
+
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_jwtSetting.SecretKey));
             var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
 
